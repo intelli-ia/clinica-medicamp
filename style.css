@@ -1385,7 +1385,7 @@ section {
     height: 130%;
     object-fit: cover;
     object-position: left top;
-    transform: translateX(-28%) translateY(-18%);
+    transform: translateX(-28vw) translateY(-14vh);
   }
 
   .hero__float--1 {

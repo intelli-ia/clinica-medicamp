@@ -1385,7 +1385,7 @@ section {
     height: 130%;
     object-fit: cover;
     object-position: left top;
-    transform: translateX(-12%) translateY(-18%);
+    transform: translateX(-28%) translateY(-18%);
   }
 
   .hero__float--1 {
@@ -1416,7 +1416,7 @@ section {
     flex: 1;
     z-index: 2;
     padding: 16px 24px 28px;
-    margin-top: -48px;
+    margin-top: -80px;
     background: transparent;
     align-items: center;
     justify-content: center;

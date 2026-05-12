@@ -58,11 +58,11 @@
             <span>Ação prática.</span>
             <span>Paz dentro de casa.</span>
           </h1>
-          <p class="hero__subtitle">Ultrassom, Doppler e radiologia em Aracaju, com tecnologia, <br>laudo rápido e explicação clara e direta do médico.</p>
+          <p class="hero__subtitle">Ultrassom, Doppler e radiologia em Aracaju, <span class="m-br"></span>com tecnologia, <br class="desktop-only">laudo rápido e explicação clara e <span class="m-br"></span>direta do médico.</p>
           <ul class="hero__benefits">
-            <li><strong>Laudos claros e rápidos:</strong> PDF assinado em até 48 horas úteis.</li>
-            <li><strong>Escuta sem pressa:</strong> entenda cada detalhe do que aparece na tela.</li>
-            <li><strong>Agendamento fácil no WhatsApp:</strong> escolha dia e hora sem sair da conversa.</li>
+            <li><strong>Laudos claros e rápidos:</strong><span class="m-br"></span> PDF assinado em até 48 horas úteis.</li>
+            <li><strong>Escuta sem pressa:</strong><span class="m-br"></span> entenda cada detalhe do que aparece na tela.</li>
+            <li><strong>Agendamento fácil no WhatsApp:</strong><span class="m-br"></span> escolha dia e hora sem sair da conversa.</li>
           </ul>
           <a href="https://wa.me/5579999990820" target="_blank" class="btn btn--primary btn--with-icon">
             <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -416,12 +416,19 @@
     updateFaqFade();
 
     function updateHeroFade() {
-      const progress = Math.max(0, Math.min(1, window.scrollY / (window.innerHeight * 0.4)));
-      heroInner.style.opacity = 1 - progress;
-      heroInner.style.transform = `translateY(${progress * -40}px)`;
+      // Only apply on desktop
+      if (window.innerWidth > 768) {
+        const progress = Math.max(0, Math.min(1, window.scrollY / (window.innerHeight * 0.4)));
+        heroInner.style.opacity = 1 - progress;
+        heroInner.style.transform = `translateY(${progress * -40}px)`;
+      } else {
+        heroInner.style.opacity = 1;
+        heroInner.style.transform = 'none';
+      }
     }
 
     window.addEventListener('scroll', updateHeroFade, { passive: true });
+    updateHeroFade();
 
     // Pain section — sticky scroll slides
     const painSection = document.querySelector('.pain');

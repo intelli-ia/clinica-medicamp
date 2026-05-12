@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="preload" as="image" href="/public/opt/8.webp" />
 </head>
 <body>
 
@@ -49,15 +50,15 @@
         </div>
       </div>
       <div class="hero__image">
-        <img src="/public/8.png" alt="Dr. Ivo Alves" class="hero__img" />
+        <img src="/public/opt/8.webp" alt="Dr. Ivo Alves" class="hero__img" fetchpriority="high" />
         <div class="hero__float hero__float--1">
-          <img src="/public/woman-getting-ultrasound-abdomen-from-doctor.jpg" alt="Ultrassom abdominal" />
+          <img src="/public/opt/woman-getting-ultrasound-abdomen-from-doctor.webp" alt="Ultrassom abdominal" />
         </div>
         <div class="hero__float hero__float--2">
-          <img src="/public/doctors-hand-holding-ultrasound-transducers.jpg" alt="Doppler" />
+          <img src="/public/opt/doctors-hand-holding-ultrasound-transducers.webp" alt="Doppler" />
         </div>
         <div class="hero__float hero__float--3">
-          <img src="/public/man-getting-ultrasound-thyroid-from-doctor.jpg" alt="Elastografia" />
+          <img src="/public/opt/man-getting-ultrasound-thyroid-from-doctor.webp" alt="Elastografia" />
         </div>
       </div>
     </div>
@@ -211,7 +212,7 @@
         </div>
       </div>
       <div class="medico__image">
-        <img src="/public/1.png" alt="Dr. Ivo Alves — Médico Radiologista" class="medico__img" />
+        <img src="/public/opt/1.webp" alt="Dr. Ivo Alves — Médico Radiologista" class="medico__img" />
       </div>
     </div>
   </section>
@@ -314,7 +315,7 @@
         <a href="https://wa.me/5579999990820" target="_blank" class="btn btn--primary">Quero agendar meu exame</a>
       </div>
       <div class="cta-final__image">
-        <img src="/public/4.png" alt="Dr. Ivo Alves" class="cta-final__photo" />
+        <img src="/public/opt/4.webp" alt="Dr. Ivo Alves" class="cta-final__photo" />
       </div>
     </div>
   </section>
@@ -480,20 +481,20 @@
         name: 'Ultrassom',
         type: 'Imagem diagnóstica',
         items: ['Abdominal, pélvico e torácico', 'Mamas, tireoide e próstata', 'Pediátrico e transfontanelar'],
-        img: '/public/woman-getting-ultrasound-abdomen-from-doctor.jpg'
+        img: '/public/opt/woman-getting-ultrasound-abdomen-from-doctor.webp'
       },
       {
         name: 'Doppler',
         type: 'Estudo vascular',
         items: ['Venoso e arterial de membros', 'De vasos abdominais e escrotais'],
-        img: '/public/doctors-hand-holding-ultrasound-transducers.jpg',
+        img: '/public/opt/doctors-hand-holding-ultrasound-transducers.webp',
         imgPosition: 'center 85%'
       },
       {
         name: 'Elastografia',
         type: 'Técnica avançada de imagem',
         items: ['Hepática', 'De tireoide'],
-        img: '/public/man-getting-ultrasound-thyroid-from-doctor.jpg',
+        img: '/public/opt/man-getting-ultrasound-thyroid-from-doctor.webp',
         imgPosition: 'center 60%'
       }
     ];

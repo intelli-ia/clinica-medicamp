@@ -501,7 +501,6 @@
   <section class="cta-final" id="contato">
     <div class="container cta-final__inner">
       <div class="cta-final__content">
-        <p class="section-label">Contato</p>
         <h2 class="cta-final__title">Atendemos pacientes<br class="m-br"> de toda Aracaju e região</h2>
         <div class="contato__info">
           <p>📍 Aracaju, SE</p>
@@ -527,7 +526,6 @@
       <div class="footer__links">
         <a href="#servicos">Serviços</a>
         <a href="#medico">Dr. Ivo Alves</a>
-        <a href="#faq">Dúvidas</a>
         <a href="https://wa.me/5579999990820" target="_blank">WhatsApp</a>
       </div>
       <div class="footer__contact">
@@ -577,19 +575,6 @@
     observer.observe(hero);
 
 
-    // Hero fade-out on scroll
-    const heroInner = document.querySelector('.hero__inner');
-    const faqInner  = document.querySelector('.faq .container');
-    const ctaFinal  = document.querySelector('.cta-final');
-
-    function updateFaqFade() {
-      const progress = Math.max(0, Math.min(1, (1 - ctaFinal.getBoundingClientRect().top / window.innerHeight) * 3));
-      faqInner.style.opacity   = 1 - progress;
-      faqInner.style.transform = `translateY(${progress * -80}px)`;
-    }
-
-    window.addEventListener('scroll', updateFaqFade, { passive: true });
-    updateFaqFade();
 
 
 

@@ -268,7 +268,7 @@ section {
   height: 28px;
   width: auto;
   display: block;
-  filter: brightness(0) invert(1);
+  filter: brightness(0) saturate(100%) invert(44%) sepia(60%) saturate(400%) hue-rotate(155deg) brightness(90%);
   transition: filter 0.3s ease;
 }
 
@@ -1728,6 +1728,7 @@ section {
     flex-wrap: nowrap;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    scroll-padding-left: 24px;
     -webkit-overflow-scrolling: touch;
     justify-content: flex-start;
     padding: 20px 24px;
@@ -1745,6 +1746,13 @@ section {
     height: 360px;
   }
 
+  .diferenciais .btn--green {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
   /* ─── SERVIÇOS ──────────────────────── */
   .servicos {
     overflow: hidden;
@@ -1753,6 +1761,15 @@ section {
   .servicos__inner {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+  .servicos__content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .servicos__arrows {
+    justify-content: center;
   }
 
   .servicos__cards { height: 140px; }

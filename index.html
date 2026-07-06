@@ -26,26 +26,14 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- HEADER -->
-  <header class="header">
-    <div class="container header__inner">
-      <div class="logo">
-        <img src="logo.svg" alt="Medicamp" class="header__logo" />
-      </div>
-      <nav class="nav">
-        <a href="#servicos">Serviços</a>
-        <a href="#medico">Dr. Ivo Alves</a>
-        <a href="#faq">Dúvidas</a>
-        <a href="#contato" class="btn btn--outline">Agendar exame</a>
-      </nav>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+  <header class="header" id="header">
+    <div class="header__pill">
+      <a href="#" class="header__logo-link">
+        <img src="logo.svg" alt="Medicamp" class="header__logo" id="headerLogo" />
+      </a>
+      <a href="#contato" class="header__cta">Agendar exame</a>
     </div>
   </header>
-
-  <div class="hero-pain-wrapper">
 
   <!-- HERO -->
   <section class="hero">
@@ -54,9 +42,8 @@
         <div class="hero__text-block">
           <img src="logo.svg" alt="Medicamp" class="hero__logo" />
           <h1 class="hero__title">
-            <span>Diagnóstico claro.</span>
-            <span>Ação prática.</span>
-            <span>Paz dentro de casa.</span>
+            <span>Ultrassom de excelência</span>
+            <span>em Aracaju</span>
           </h1>
           <p class="hero__subtitle">Ultrassom, Doppler e radiologia em Aracaju, <span class="m-br"></span>com tecnologia, <br class="desktop-only">laudo rápido e explicação clara e <span class="m-br"></span>direta do médico.</p>
           <ul class="hero__benefits">
@@ -92,53 +79,227 @@
     </div>
   </section>
 
-  <!-- DOR / EMPATIA -->
-  <section class="pain" id="pain">
-    <div class="pain__sticky">
+  <!-- DEPOIMENTOS -->
+  <section class="testimonials" id="depoimentos">
+    <div class="testimonials__header">
+      <h2 class="section-title">Quem já passou<br>por aqui conta.</h2>
+    </div>
 
-      <div class="pain__slide active">
-        <div class="pain__slide-content">
-          <span class="pain__bg-number">01</span>
-          <div class="pain__line"></div>
-          <h2 class="pain__question">Tem dificuldade em encontrar um bom lugar para fazer seu exame?</h2>
+    <div class="testimonials__tracks">
+    <div class="testimonials__track-wrapper">
+      <div class="testimonials__track testimonials__track--fwd">
+        <!-- Row 1 (duplicated for infinite loop) -->
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Atendimento incrível. O médico explicou cada detalhe do exame com muita clareza e paciência."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">M</div>
+            <div><p class="testimonial-card__name">Mariana Costa</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Fiz meu ultrassom aqui e fiquei impressionada com a qualidade do atendimento. O laudo chegou rapidíssimo!"</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">A</div>
+            <div><p class="testimonial-card__name">Ana Beatriz</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Ambiente limpo, organizado e acolhedor. Me senti à vontade desde o momento que entrei."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">R</div>
+            <div><p class="testimonial-card__name">Rafael Mendonça</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"O Dr. Ivo explicou tudo o que estava vendo na tela em tempo real. Nunca tinha tido essa experiência antes."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">F</div>
+            <div><p class="testimonial-card__name">Fernanda Lima</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Agendei pelo WhatsApp em menos de 5 minutos. Facilidade total e atendimento de primeira."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">C</div>
+            <div><p class="testimonial-card__name">Carlos Eduardo</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Meu médico pediu um Doppler e fui à Medicamp. Saí com o laudo no mesmo dia. Recomendo muito!"</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">J</div>
+            <div><p class="testimonial-card__name">Juliana Nunes</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <!-- Duplicado para loop contínuo -->
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Atendimento incrível. O médico explicou cada detalhe do exame com muita clareza e paciência."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">M</div>
+            <div><p class="testimonial-card__name">Mariana Costa</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Fiz meu ultrassom aqui e fiquei impressionada com a qualidade do atendimento. O laudo chegou rapidíssimo!"</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">A</div>
+            <div><p class="testimonial-card__name">Ana Beatriz</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Ambiente limpo, organizado e acolhedor. Me senti à vontade desde o momento que entrei."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">R</div>
+            <div><p class="testimonial-card__name">Rafael Mendonça</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"O Dr. Ivo explicou tudo o que estava vendo na tela em tempo real. Nunca tinha tido essa experiência antes."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">F</div>
+            <div><p class="testimonial-card__name">Fernanda Lima</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Agendei pelo WhatsApp em menos de 5 minutos. Facilidade total e atendimento de primeira."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">C</div>
+            <div><p class="testimonial-card__name">Carlos Eduardo</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Meu médico pediu um Doppler e fui à Medicamp. Saí com o laudo no mesmo dia. Recomendo muito!"</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">J</div>
+            <div><p class="testimonial-card__name">Juliana Nunes</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div class="pain__slide">
-        <div class="pain__slide-content">
-          <span class="pain__bg-number">02</span>
-          <div class="pain__line"></div>
-          <h2 class="pain__question">Não sabe se o exame vai doer ou ser desconfortável?</h2>
+    <div class="testimonials__track-wrapper">
+      <div class="testimonials__track testimonials__track--rev">
+        <!-- Row 2 (duplicated for infinite loop) -->
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Profissional extremamente competente. Saí da consulta com todas as minhas dúvidas respondidas."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">P</div>
+            <div><p class="testimonial-card__name">Paulo Sergio</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Fiz ultrassom abdominal e o Dr. Ivo foi impecável. Explicou tudo com tranquilidade."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">L</div>
+            <div><p class="testimonial-card__name">Larissa Vieira</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Clínica muito bem equipada. A recepção foi super atenciosa e o atendimento foi rápido."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">T</div>
+            <div><p class="testimonial-card__name">Thiago Brito</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Melhor clínica de ultrassom de Aracaju. Atendimento humanizado de verdade, não só discurso."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">S</div>
+            <div><p class="testimonial-card__name">Simone Almeida</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Recebi o laudo em PDF assinado no mesmo dia. Isso facilita muito na hora de levar ao médico."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">D</div>
+            <div><p class="testimonial-card__name">Diego Santos</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Indico para toda a família. Exame de qualidade, médico atencioso e preço justo."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">V</div>
+            <div><p class="testimonial-card__name">Vanessa Rocha</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <!-- Duplicado para loop contínuo -->
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Profissional extremamente competente. Saí da consulta com todas as minhas dúvidas respondidas."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">P</div>
+            <div><p class="testimonial-card__name">Paulo Sergio</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Fiz ultrassom abdominal e o Dr. Ivo foi impecável. Explicou tudo com tranquilidade."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">L</div>
+            <div><p class="testimonial-card__name">Larissa Vieira</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Clínica muito bem equipada. A recepção foi super atenciosa e o atendimento foi rápido."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">T</div>
+            <div><p class="testimonial-card__name">Thiago Brito</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Melhor clínica de ultrassom de Aracaju. Atendimento humanizado de verdade, não só discurso."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">S</div>
+            <div><p class="testimonial-card__name">Simone Almeida</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Recebi o laudo em PDF assinado no mesmo dia. Isso facilita muito na hora de levar ao médico."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">D</div>
+            <div><p class="testimonial-card__name">Diego Santos</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <blockquote>"Indico para toda a família. Exame de qualidade, médico atencioso e preço justo."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">V</div>
+            <div><p class="testimonial-card__name">Vanessa Rocha</p><p class="testimonial-card__role">Paciente</p></div>
+          </div>
         </div>
       </div>
+    </div>
+    </div><!-- /testimonials__tracks -->
 
-      <div class="pain__slide">
-        <div class="pain__slide-content">
-          <span class="pain__bg-number">03</span>
-          <div class="pain__line"></div>
-          <h2 class="pain__question">Já teve uma experiência ruim com atendimento apressado ou impessoal?</h2>
-        </div>
-      </div>
-
-      <div class="pain__slide">
-        <div class="pain__slide-content">
-          <span class="pain__bg-number">04</span>
-          <div class="pain__line"></div>
-          <h2 class="pain__question">Tem dúvidas sobre preparo, jejum ou laudo?</h2>
-        </div>
-      </div>
-
-      <div class="pain__dots">
-        <span class="pain__dot active"></span>
-        <span class="pain__dot"></span>
-        <span class="pain__dot"></span>
-        <span class="pain__dot"></span>
-      </div>
-
+    <div class="container testimonials__cta">
+      <a href="https://wa.me/5579999990820" target="_blank" class="btn btn--primary btn--with-icon">
+        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        Agende sua consulta
+      </a>
     </div>
   </section>
-
-  </div><!-- /hero-pain-wrapper -->
 
   <!-- DIFERENCIAIS -->
   <section class="diferenciais" id="diferenciais">
@@ -374,26 +535,33 @@
   <script>
     const header = document.querySelector('.header');
     const hero = document.querySelector('.hero');
-
-    // Hamburger menu
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.querySelector('.nav');
-
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
-      navMenu.classList.toggle('open');
-    });
-
-    navMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('open');
-      });
-    });
+    const headerLogo = document.getElementById('headerLogo');
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        header.classList.toggle('header--visible', !entry.isIntersecting);
+        const pastHero = !entry.isIntersecting;
+        header.classList.toggle('header--visible', pastHero);
+
+        if (pastHero) {
+          const navbarY = 40;
+          const sections = document.querySelectorAll('section, footer');
+          let isDark = false;
+          for (const section of Array.from(sections)) {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= navbarY && rect.bottom > navbarY) {
+              const bg = window.getComputedStyle(section).backgroundColor;
+              const match = bg.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*([\d.]+))?\)/);
+              if (match) {
+                const alpha = match[4] !== undefined ? +match[4] : 1;
+                if (alpha < 0.1) break;
+                const luminance = (+match[1] * 299 + +match[2] * 587 + +match[3] * 114) / 1000;
+                isDark = luminance < 100;
+              }
+              break;
+            }
+          }
+          headerLogo.classList.toggle('header__logo--dark', !isDark);
+        }
       },
       { threshold: 0 }
     );
@@ -415,41 +583,7 @@
     window.addEventListener('scroll', updateFaqFade, { passive: true });
     updateFaqFade();
 
-    function updateHeroFade() {
-      // Only apply on desktop
-      if (window.innerWidth > 768) {
-        const progress = Math.max(0, Math.min(1, window.scrollY / (window.innerHeight * 0.4)));
-        heroInner.style.opacity = 1 - progress;
-        heroInner.style.transform = `translateY(${progress * -40}px)`;
-      } else {
-        heroInner.style.opacity = 1;
-        heroInner.style.transform = 'none';
-      }
-    }
 
-    window.addEventListener('scroll', updateHeroFade, { passive: true });
-    updateHeroFade();
-
-    // Pain section — sticky scroll slides
-    const painSection = document.querySelector('.pain');
-    const painSlides = document.querySelectorAll('.pain__slide');
-    const painDots = document.querySelectorAll('.pain__dot');
-    const painTotal = painSlides.length;
-
-    function updatePain() {
-      const rect = painSection.getBoundingClientRect();
-      const scrolled = -rect.top;
-      const sectionHeight = rect.height - window.innerHeight;
-      const progress = Math.max(0, Math.min(1, scrolled / sectionHeight));
-
-      const activeIndex = Math.min(Math.floor(progress * painTotal), painTotal - 1);
-
-      painSlides.forEach((slide, i) => slide.classList.toggle('active', i === activeIndex));
-      painDots.forEach((dot, i) => dot.classList.toggle('active', i === activeIndex));
-    }
-
-    window.addEventListener('scroll', updatePain, { passive: true });
-    updatePain();
 
     // ── Processo V2 — sticky scroll slides ──
     const processoSection = document.querySelector('.processo');

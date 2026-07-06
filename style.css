@@ -542,6 +542,20 @@ section {
   box-shadow: 0 0 28px #8DD9EB88;
 }
 
+.hero .btn--green,
+.medico .btn--green {
+  background: #25D366;
+  color: #fff;
+  border-color: #25D366;
+}
+
+.hero .btn--green:hover,
+.medico .btn--green:hover {
+  background: #1ebe5a;
+  border-color: #1ebe5a;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+}
+
 
 .hero__scroll-tag {
   position: absolute;
@@ -1618,6 +1632,11 @@ section {
     display: inline-block;
   }
 
+  .btn--with-icon {
+    display: inline-flex;
+    align-items: center;
+  }
+
   .section-label {
     font-size: 11px;
   }
@@ -1658,7 +1677,7 @@ section {
     min-height: 500px !important;
     order: -1 !important;
     overflow: hidden !important;
-    margin-top: -140px;
+    margin-top: -60px;
   }
 
   .hero__image::after {
@@ -1757,6 +1776,7 @@ section {
   }
 
   .hero__benefits {
+    order: 1;
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
@@ -1785,7 +1805,9 @@ section {
     width: auto;
     text-align: center;
     margin-top: 0;
+    margin-bottom: 12px;
     display: inline-flex;
+    order: 0;
   }
 
   /* ─── PAIN ──────────────────────────── */

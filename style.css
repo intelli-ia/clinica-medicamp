@@ -702,10 +702,6 @@ section {
   to   { transform: translateX(0); }
 }
 
-.testimonials__track:hover {
-  animation-play-state: paused;
-}
-
 .testimonial-card {
   flex-shrink: 0;
   width: 300px;
@@ -783,6 +779,20 @@ section {
 =========================== */
 .diferenciais {
   background-color: #FFFFF2;
+}
+
+.btn--green {
+  background: #25D366;
+  color: #fff;
+  border-color: #25D366;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.btn--green:hover {
+  background: #1ebe5a;
+  border-color: #1ebe5a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
 }
 
 .diferenciais .section-label,

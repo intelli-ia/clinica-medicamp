@@ -289,7 +289,7 @@ section {
   height: 28px;
   width: auto;
   display: block;
-  filter: brightness(0) saturate(100%) invert(44%) sepia(60%) saturate(400%) hue-rotate(155deg) brightness(90%);
+  filter: brightness(0) saturate(100%) invert(38%) sepia(70%) saturate(600%) hue-rotate(157deg) brightness(85%);
   transition: filter 0.3s ease;
 }
 

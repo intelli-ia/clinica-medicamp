@@ -13,6 +13,7 @@ html {
 
 body {
   overflow-x: hidden;
+  width: 100%;
   background-color: #010B10;
   color: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
@@ -632,10 +633,11 @@ section {
   position: relative;
   z-index: 1;
   margin-top: -40px;
+  overflow: clip;
 }
 
 .testimonials__tracks {
-  overflow: hidden;
+  overflow: clip;
 }
 
 .testimonials__header {
@@ -653,7 +655,7 @@ section {
 .testimonials__track-wrapper {
   position: relative;
   display: flex;
-  overflow: hidden;
+  overflow: clip;
   margin-bottom: 16px;
 }
 
@@ -814,6 +816,7 @@ section {
 .diferenciais__carousel-wrapper {
   padding: 0 0 48px;
   position: relative;
+  overflow: clip;
 }
 
 .diferenciais__carousel {
@@ -1544,7 +1547,8 @@ section {
     height: auto;
     padding-bottom: 240px;
     background: #FFFFF2;
-    position: static;
+    position: relative;
+    overflow-x: clip;
   }
   .hero-pain-wrapper {
     background: #FFFFF2;
@@ -1568,7 +1572,7 @@ section {
     min-height: 500px !important;
     order: -1 !important;
     overflow: hidden !important;
-    margin-top: -90px;
+    margin-top: -140px;
   }
 
   .hero__image::after {
@@ -1622,7 +1626,7 @@ section {
     flex: 1;
     z-index: 2;
     padding: 24px 24px 40px;
-    margin-top: -80px;
+    margin-top: -100px;
     margin-left: 0;
     background: transparent;
     align-items: center;
@@ -1641,11 +1645,16 @@ section {
   .hero__logo {
     width: 90px;
     margin-bottom: 10px;
+    margin-top: -24px;
   }
 
   .hero__title {
-    font-size: 28px;
+    font-size: 42px;
     margin-bottom: 16px;
+  }
+
+  .hero__title span {
+    white-space: normal;
   }
 
   .hero__subtitle { 

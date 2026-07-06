@@ -408,6 +408,7 @@ section {
 .hero__image {
   flex: 1;
   height: 680px;
+  overflow: visible;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -416,7 +417,7 @@ section {
 
 .hero__img {
   width: auto;
-  height: 100%;
+  height: 120%;
   object-fit: contain;
   display: block;
   position: relative;

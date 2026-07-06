@@ -1,7 +1,9 @@
 /* ===========================
    RESET & BASE
 =========================== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -23,14 +25,25 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, .logo__text {
+h1,
+h2,
+h3,
+.logo__text {
   font-family: 'MuseoModerno', sans-serif;
   font-weight: 500;
 }
 
-h1 { color: #8DD9EB; }
-h2 { color: #8DD9EB; }
-h3 { color: #8DD9EB; }
+h1 {
+  color: #8DD9EB;
+}
+
+h2 {
+  color: #8DD9EB;
+}
+
+h3 {
+  color: #8DD9EB;
+}
 
 a {
   color: inherit;
@@ -57,10 +70,18 @@ section {
 /* ===========================
    TYPOGRAPHY UTILITIES
 =========================== */
-.m-br { display: none; }
-.desktop-only { display: inline; }
+.m-br {
+  display: none;
+}
+
+.desktop-only {
+  display: inline;
+}
+
 @media (max-width: 768px) {
-  .desktop-only { display: none; }
+  .desktop-only {
+    display: none;
+  }
 }
 
 .section-label {
@@ -193,7 +214,7 @@ section {
   border-radius: 8px;
   display: block;
   object-fit: cover;
-  box-shadow: 0 32px 64px rgba(0,0,0,0.4);
+  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.4);
 }
 
 .cta-final__image {
@@ -305,7 +326,7 @@ section {
    HERO
 =========================== */
 .hero {
-  padding: 120px 0 0;
+  padding: 60px 0 50px;
   background-color: #FFFFF2;
 }
 
@@ -428,16 +449,39 @@ section {
 
 /* Floating exam images */
 @keyframes float1 {
-  0%, 100% { transform: translateY(0px); }
-  50%       { transform: translateY(-10px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
+
 @keyframes float2 {
-  0%, 100% { transform: translateY(0px); }
-  50%       { transform: translateY(9px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(9px);
+  }
 }
+
 @keyframes float3 {
-  0%, 100% { transform: translateY(0px); }
-  50%       { transform: translateY(-7px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
 }
 
 .hero__float {
@@ -520,11 +564,30 @@ section {
 }
 
 @keyframes tagReveal {
-  0%   { transform: translateX(-50%) translateY(100%); opacity: 0; }
-  15%  { transform: translateX(-50%) translateY(0);    opacity: 1; }
-  70%  { transform: translateX(-50%) translateY(0);    opacity: 1; }
-  85%  { transform: translateX(-50%) translateY(6px);  opacity: 0.6; }
-  100% { transform: translateX(-50%) translateY(100%); opacity: 0; }
+  0% {
+    transform: translateX(-50%) translateY(100%);
+    opacity: 0;
+  }
+
+  15% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+
+  85% {
+    transform: translateX(-50%) translateY(6px);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(100%);
+    opacity: 0;
+  }
 }
 
 .hero__scroll-tag--animate {
@@ -695,13 +758,23 @@ section {
 }
 
 @keyframes marquee-fwd {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes marquee-rev {
-  from { transform: translateX(-50%); }
-  to   { transform: translateX(0); }
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
 
 .testimonial-card {
@@ -1023,8 +1096,17 @@ section {
 }
 
 @keyframes wordReveal {
-  from { opacity: 0; filter: blur(8px); transform: translateY(5px); }
-  to   { opacity: 1; filter: blur(0);   transform: translateY(0); }
+  from {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
 }
 
 .sw {
@@ -1523,7 +1605,9 @@ section {
 @media (max-width: 768px) {
 
   /* ─── BASE ─────────────────────────── */
-  section { padding: 64px 0; }
+  section {
+    padding: 64px 0;
+  }
 
 
   .btn,
@@ -1550,9 +1634,11 @@ section {
     position: relative;
     overflow-x: clip;
   }
+
   .hero-pain-wrapper {
     background: #FFFFF2;
   }
+
   .hero .hero__inner {
     max-width: 100%;
     padding: 0;
@@ -1636,10 +1722,10 @@ section {
 
   .hero__text-block {
     width: 100%;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .hero__logo {
@@ -1657,32 +1743,38 @@ section {
     white-space: normal;
   }
 
-  .hero__subtitle { 
-    display: block; 
-    font-size: 13px; 
-    margin-bottom: 12px; 
+  .hero__subtitle {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 12px;
     font-weight: 600;
     color: #010B10CC;
     line-height: 1.4;
   }
-  .hero__text { display: none; }
+
+  .hero__text {
+    display: none;
+  }
+
   .hero__benefits {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
     gap: 10px;
     width: 100%;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
   }
+
   .hero__benefits li {
     font-size: 11px;
     line-height: 1.4;
     padding-left: 0;
-    text-align: center;
+    text-align: left;
     color: #010B10BB;
     max-width: 320px;
   }
+
   .hero__benefits li::before {
     position: static;
     display: inline-block;
@@ -1703,6 +1795,11 @@ section {
   }
 
   /* ─── DIFERENCIAIS ──────────────────── */
+  .diferenciais .section-label,
+  .diferenciais .section-title {
+    text-align: left;
+  }
+
   .diferenciais .section-title {
     font-size: clamp(20px, 5vw, 26px);
     margin-bottom: 40px;
@@ -1712,6 +1809,7 @@ section {
     font-size: 13px;
     margin-bottom: 28px;
     line-height: 1.4;
+    text-align: left;
   }
 
   .diferencial__title {
@@ -1722,7 +1820,9 @@ section {
     font-size: 12px;
   }
 
-  .diferenciais__carousel-wrapper { padding: 0; }
+  .diferenciais__carousel-wrapper {
+    padding: 0;
+  }
 
   .diferenciais__carousel {
     flex-wrap: nowrap;
@@ -1736,7 +1836,9 @@ section {
     scrollbar-width: none;
   }
 
-  .diferenciais__carousel::-webkit-scrollbar { display: none; }
+  .diferenciais__carousel::-webkit-scrollbar {
+    display: none;
+  }
 
   .diferencial__card {
     scroll-snap-align: start;
@@ -1772,7 +1874,9 @@ section {
     justify-content: center;
   }
 
-  .servicos__cards { height: 140px; }
+  .servicos__cards {
+    height: 140px;
+  }
 
   /* ─── MÉDICO ────────────────────────── */
   .medico {
@@ -1825,10 +1929,10 @@ section {
   .medico__text-block {
     width: 100%;
     max-width: 340px;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .medico__title {
@@ -1895,9 +1999,17 @@ section {
   }
 
   /* ─── FAQ ───────────────────────────── */
-  .faq          { position: relative; }
-  .faq .container { will-change: auto; }
-  .faq__list    { max-width: 100%; }
+  .faq {
+    position: relative;
+  }
+
+  .faq .container {
+    will-change: auto;
+  }
+
+  .faq__list {
+    max-width: 100%;
+  }
 
   .faq .section-label {
     color: #8DD9EB;
@@ -1944,7 +2056,9 @@ section {
     order: -1;
   }
 
-  .m-br { display: block; }
+  .m-br {
+    display: block;
+  }
 
   .cta-final__title {
     font-size: clamp(20px, 5vw, 26px);

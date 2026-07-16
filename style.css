@@ -1659,6 +1659,11 @@ section {
     align-items: center;
   }
 
+  .header__cta {
+    padding: 6px 14px;
+    font-size: 11px;
+  }
+
   .section-label {
     font-size: 11px;
   }
